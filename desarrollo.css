@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'D';
+    src: url(fuentes/DEMARUS.otf);
+}
+
+@font-face {
+    font-family: 'S';
+    src: url(fuentes/Corporate\ S\ Light\ Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.header {
+    background-color: #000000;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top: 20%;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #F9FAFC;
+    display: block;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.menu .navbar ul li a:hover {
+    color: #000000;
+    background-color: #F9FAFC;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.back-to-top {
+    position: fixed; 
+    bottom: 20px;   
+    right: 20px;     
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header-content {
+    text-align: center;
+  }
+
+.isotipo {
+    
+    margin-top: -10%;
+}
+
+  
+.header-content h3 {
+    color: #F0F0FC;
+    margin-top: 5%;
+    margin-bottom: 30%;
+    font-size: 1.5em;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #000000;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 600;
+}
+
+.btn-1:hover {
+    color: #000000;
+    background-color: #F9FAFC;
+    border: 2px solid #000000;
+}
+
+.paneles {
+    padding: 100px 0;
+    background-color: #F9FAFC;
+    position: relative;
+}
+
+.paneles-content {
+    text-align: center;
+}
+
+.paneles-content h2 {
+    font-size: 55px;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+.txt-p {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 35px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.paneles-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.paneles-1 {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.paneles-1 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.paneles-1 h3 {
+    font-size: 55px;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.paneles-1 p {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 35px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.ecovolts {
+    background-color: #000000;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+
+.ecovolts-content {
+    text-align: center;
+}
+
+.ecovolts-content h2 {
+    font-size: 55px;
+    line-height: 1.2;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.ecovolts-content p {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.ecovolts-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.ecovolts-1 {
+    flex: 0 0 calc(33.33% - 30px);
+    max-width: 300px;
+    padding: 20px;
+}
+
+.ecovolts-1 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.ecovolts-1 h3 {
+    color: #F9FAFC;
+    font-size: 20px;
+}
+
+.general {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.general-1 {
+    border: 10px solid #000000;
+    width: 50%;
+    padding: 80px 40px;
+    background-color: #F9FAFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.general-1 h2 {
+    color: #000000;
+    font-size: 55px;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.general-1 p {
+    color: #000000;
+    max-width: 600px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.general-2, .general-3 {
+    width: 50%;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.general-2 img{
+    align-items: center;
+    display: flex;
+    margin-top: 15%;
+    
+}
+
+.general-3 img{
+    align-items: center;
+    display: flex;
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 80%;
+
+}
+
+.blog {
+    border: 10px solid #000000;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 55px;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.blog > p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.blog-1 {
+    flex: 0 0 calc(33.33% - 30px);
+    max-width: 350px;
+    padding: 20px;
+}
+
+.blog-1 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.blog-1 p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.footer {
+    padding: 80px 80px;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.link {
+    flex: 1;
+    min-width: 200px;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 20px;    
+}
+
+.link a {
+    font-size: 16px;
+    color: #F9FAFC;
+    display: block;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    padding: 5px;
+}
+
+.link a:hover {
+    color: #000000;
+    background-color: #F9FAFC;
+    border: 2px solid #000000;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+@media(max-width:991px) {
+
+    .logo {
+        width: 20%;
+    }
+    
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 100vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content h3 {
+        width: 100%;
+        font-size: 150%;
+        margin-top: 30%;
+        padding: 0;
+    }
+
+    .paneles {
+        padding: 30px;
+    }
+
+    .paneles-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .paneles-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .paneles p {
+        padding: 0;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .ecovolts {
+        padding: 30px;
+    }
+
+    .ecovolts-content p {
+        padding: 0;
+    }
+
+    .ecovolts-group {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .ecovolts-1 {
+        margin-bottom: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {    
+        border: none;
+        width: 100%;
+        padding: 30px; 
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .general-1 p {
+        text-align: justify;
+    }
+
+    .blog {
+        padding: 30px; 
+    }
+
+    .blog-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+   
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .link a:hover{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
